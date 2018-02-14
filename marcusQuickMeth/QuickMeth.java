@@ -3,11 +3,9 @@ package marcusQuickMeth;
 import javax.swing.JOptionPane;
 
 public class QuickMeth {
-
-	
 	/**
 	 * @author marcus8448
-	 * Version 3.0.0
+	 * Version 4.0.0
 	 */
 	public static void Multiply() {
 		
@@ -47,14 +45,21 @@ public class QuickMeth {
 		start();
 	}
 	public static void error() {
-		JOptionPane.showMessageDialog(null, "Please enter another number","Error", 2);
+		JOptionPane.showMessageDialog(null, "Please enter valid number","Error", 2);
 		start();
 	}
 	public static void end() {
 		JOptionPane.showMessageDialog(null, "Program Will Now Close", "End Of Project", 0);
 	}
 	public static void start() {
-		String OpChooseS = JOptionPane.showInputDialog(null, "Enter '1' to Multiply, '2' to Divide, '3' to Subtract, '4' to Add, and '5' to end the program", "Enter a number", 3);
+		String OpChooseS = JOptionPane.showInputDialog(null, "Enter '1' to Multiply, '2' to Divide, '3' to Subtract, '4' to Add, and '5' to end the program", "Enter a number from 1 - 5", 3);
+		if (OpChooseS.matches(".*[:-~].*")) { 
+		    error();
+		} else {
+			if (OpChooseS.matches(".*[!-/].*")) {
+				error();
+			}
+		}
 		int OpChooseI = Integer.parseInt(OpChooseS);
 		if (OpChooseI == 1) {
 			Multiply();
@@ -83,7 +88,7 @@ public class QuickMeth {
 		}
 	}
 	public static void main(String[] args)  {
-		JOptionPane.showMessageDialog(null, "Quick Meth Version 3.0.0 By Marcus", "About", 1);
+		JOptionPane.showMessageDialog(null, "Quick Meth Version 4.0.0 By Marcus", "About", 1);
 		start();
 	}
 
