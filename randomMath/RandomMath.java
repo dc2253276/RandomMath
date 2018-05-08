@@ -7,7 +7,7 @@ public class RandomMath {
 	
 	/**
 	 * @author marcus8448
-	 * Version 2.0.0
+	 * Version 3.0.0
 	 */
 	public static void main(String[] args)  {
 		JOptionPane.showMessageDialog(null, "Quick Meth Version 2.0 By Marcus", "About", 1);
