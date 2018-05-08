@@ -68,7 +68,7 @@ public class RandomMath {
 		start();
 	}
 	public static void start() {
-		String OpChooseS = JOptionPane.showInputDialog(null, "Enter '1' to Multiply, '2' to Divide, '3' to Subtract, '4' to Add, '5' to end the program and '6' to see QuickMeth INFO.", "Enter a number from 1 - 5", 3);
+		String OpChooseS = JOptionPane.showInputDialog(null, "Enter '1' to Multiply, '2' to Divide, '3' to Subtract, '4' to Add, '5' to end the program and '6' to see RandomMath INFO.", "Enter a number from 1 - 5", 3);
 		if (OpChooseS == null || OpChooseS != null && ("".equals(OpChooseS))) {
 			errorCancel();
 		} else {
@@ -85,7 +85,7 @@ public class RandomMath {
 							errorMaxSize();
 						} else {
 							if (OpChooseS == "5") {
-								JOptionPane.showMessageDialog(null, "Quick Meth Version " + Constants.VERSIONBASE + " Will Now Close", "End Of Project", 0);
+								JOptionPane.showMessageDialog(null, "RandomMath Version " + Constants.VERSIONBASE + " Will Now Close", "End Of Project", 0);
 							}
 						}
 					}
@@ -122,7 +122,7 @@ public class RandomMath {
 		}
 	}
 	public static void main(String[] args)  {
-		JOptionPane.showMessageDialog(null, "Quick Meth Version " + Constants.VERSIONBASE + "." + Constants.VERSIONADDITION1 + "." + Constants.VERSIONADDITION2 + " Created By: " + Constants.CurrentAuthor, "About", 1);
+		JOptionPane.showMessageDialog(null, "RandomMath Version " + Constants.VERSIONBASE + "." + Constants.VERSIONADDITION1 + "." + Constants.VERSIONADDITION2 + " Created By: " + Constants.CurrentAuthor, "About", 1);
 		start();
 	}
 
