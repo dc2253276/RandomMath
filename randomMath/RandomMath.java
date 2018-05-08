@@ -88,7 +88,7 @@ public class RandomMath {
 		}
 	}
 	public static void main(String[] args)  {
-		JOptionPane.showMessageDialog(null, "Quick Meth Version 4.0.0 By Marcus", "About", 1);
+		JOptionPane.showMessageDialog(null, "RandomMath Version 4.0.0 By Marcus", "About", 1);
 		start();
 	}
 
