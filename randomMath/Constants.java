@@ -1,4 +1,4 @@
-package marcusQuickMeth;
+package RandomMath;
 
 public class Constants {
 
