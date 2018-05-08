@@ -1,4 +1,4 @@
-package RandomMath;
+package randomMath;
 
 public class Constants {
 
